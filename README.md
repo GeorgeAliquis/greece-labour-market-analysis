@@ -2,13 +2,18 @@
 
 ## Project Overview
 
-This project aims to analyze the evolution of the Greek labour market from January 2004 to September 2026 using official statistical data from the **Hellenic Statistical Authority (ELSTAT)**.
+This project analyzes the evolution of the Greek labour market from January 2004 to September 2026 using official statistical data from the **Hellenic Statistical Authority (ELSTAT)**.
 
-The goal is to transform raw labour market data into a structured dataset and develop an interactive **Power BI dashboard** that highlights historical trends, year-over-year comparisons, and key labour market indicators.
+The goal is to transform raw labour market data into a structured, analysis-ready dataset and develop an interactive **Power BI dashboard** highlighting historical trends, year-over-year comparisons, and key labour market indicators.
 
 ## Dataset
 
-The repository currently contains the original, unmodified dataset covering:
+The repository currently contains both the original dataset and its cleaned, validated version.
+
+- **Original Dataset:** Raw statistical data published by ELSTAT, preserved without modifications.
+- **Cleaned Dataset (`data/processed/labour_market_cleaned.xls`):** Restructured and validated data prepared for analysis and Power BI integration.
+
+Both datasets cover:
 
 - Employment
 - Unemployment
@@ -19,17 +24,30 @@ The repository currently contains the original, unmodified dataset covering:
 **Source:** Hellenic Statistical Authority (ELSTAT)  
 **Period:** January 2004 – September 2026
 
+### Data Cleaning & Transformation
+
+The cleaned dataset includes the following improvements:
+
+1. Restructured the original data into a tabular, analysis-ready format.
+2. Standardized dates using the `YYYY-MM-DD` format.
+3. Converted population figures from thousands into individual persons.
+4. Standardized unemployment rates as decimal proportions for percentage formatting.
+5. Applied consistent formatting and data types.
+6. Validated all 546 monthly-series records and their numerical values against the original dataset.
+
 ## Planned Development
 
-The project will be developed in the following stages:
+The next stages of the project include:
 
-1. **Data Cleaning & Transformation:** Restructure the original dataset into an analysis-ready format.
-2. **Data Validation:** Verify the accuracy and consistency of the processed data against the original source.
-3. **Power BI Dashboard:** Develop interactive visualizations showing labour market trends and year-over-year comparisons.
-4. **Insights & Findings:** Identify and communicate key developments in the Greek labour market.
+1. **Power BI Data Modeling:** Create relationships, a date dimension, and DAX measures.
+2. **Interactive Dashboard:** Develop visualizations of employment, unemployment, historical trends, seasonality, and year-over-year comparisons.
+3. **Insights & Findings:** Identify and communicate key developments in the Greek labour market.
+4. **Ongoing Updates:** Incorporate newly published ELSTAT statistics and maintain the dashboard.
 
 ## Project Status
 
-🚧 **In Progress | Initial Stage**
+🚧 **In Progress | Data Preparation Complete**
 
-The repository currently includes only the original dataset. Processed data, dashboard files, and analytical findings will be added as the project progresses.
+The original and cleaned datasets are now available in the repository. Data cleaning and validation have been completed.
+
+The next stage focuses on building the Power BI data model and interactive dashboard. Dashboard files and analytical findings will be added as development progresses.
