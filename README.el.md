@@ -224,6 +224,7 @@
 │   └── processed/
 │
 ├── .gitignore
+├── LICENSE
 ├── README.el.md                   # Τεκμηρίωση στα ελληνικά
 └── README.md                      # Τεκμηρίωση στα αγγλικά
 ```

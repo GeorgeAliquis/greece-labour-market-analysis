@@ -224,6 +224,7 @@ The original `.xls` file is kept alongside a cleaned `.xls` dataset. The cleanin
 │   └── processed/
 │
 ├── .gitignore
+├── LICENSE
 ├── README.el.md                   # Greek documentation
 └── README.md                      # English documentation
 ```
